@@ -1,0 +1,83 @@
+notes.txt
+
+# General exclusions
+*.log
+*.out
+*.pid
+*.tar.gz
+*.zip
+*.bak
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+!.env.example
+
+# Editor/IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Backend (Go)
+# Compiled binary
+/tennis-club-api/tennis-club-api
+
+# Go-specific exclusions
+vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.prof
+*.coverage
+coverage.out
+
+# Frontend (React.js)
+# Node modules
+/tennis-club-client/node_modules/
+
+# Build output
+/tennis-club-client/build/
+/tennis-club-client/dist/
+
+# Parcel or other bundler cache
+/tennis-club-client/.cache/
+/tennis-club-client/.parcel-cache/
+
+# Logs and runtime data
+/tennis-club-client/*.log
+/tennis-club-client/npm-debug.log*
+/tennis-club-client/yarn-error.log
+/tennis-club-client/yarn-debug.log*
+
+# Docker
+# Docker-specific files
+*.dockerignore
+Dockerfile.dev
+docker-compose.override.yml
+*.bak.docker
+
+# Database
+# PostgreSQL temporary files or dumps
+*.sql.gz
+*.sql.backup
+pgdata/
+
+# Testing
+test-reports/
+coverage/
+
+# Build artifacts and scripts
+/tennis-club-api/bin/
+/tennis-club-api/tmp/
+
+# Miscellaneous
+*.seed
+*.dat
+*.rdb
